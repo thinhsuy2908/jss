@@ -1,0 +1,8 @@
+let one=prompt("nhập số 1")
+a=Number(one)
+let two=prompt("nhập số 2")
+b=Number(two)
+let three=prompt("nhập số 3 ")
+c=Number(three)
+let Mat=Math.max(a,b,c)
+alert(Mat)
