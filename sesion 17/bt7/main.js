@@ -1,4 +1,4 @@
 let num=prompt("vui lòng nhập 1 sô tiền")
 a=Number(num)
-let text = a.toLocaleString("vi-VN", {style:"currency", currency:"VND"});
+let text = a.toLocaleString("vi-VN", {style:"currency", currency:"VND"}).replace("₫","VND");
 alert(text);
