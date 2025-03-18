@@ -1,0 +1,16 @@
+let a=Math.abs(-5.5)//trị tuyệt đối của số âm thành số dương 
+let b=Math.abs(10)
+let c=Math.ceil(4.4)//làm tròn lên số nguyên lớn hơn gần nhất (làm tròn từ 4.4 lên 5)
+let d=Math.ceil(5.8)//làm tròn lên số nguyên lớn hơn gần nhất (làm tròn từ 5.8 lên 6)
+let e=Math.floor(5.7)//hàm floor dùng để làm tròn xuống số nguyên (làm tròn 5.7 xuống 5)
+let f=Math.floor(6.1)//hàm floor dùng để làm tròn xuống số nguyên (làm tròn 6.1 xuống 6)
+let g=Math.round(10.1)//làm tròn đến số nguyên gần nhất
+let o=Math.round(20.6)
+document.writeln(a)
+document.writeln(b)
+document.writeln(c)
+document.writeln(d)
+document.writeln(e)
+document.writeln(f)
+document.writeln(g)
+document.writeln(o)
