@@ -8,5 +8,14 @@ else{
     let period = hour >= 12 ? "PM" : "AM";
     let displayHour = hour % 12;
     displayHour = displayHour === 0 ? 12 : displayHour;
-    alert(`${displayHour} ${minute} ${second} ${period}`)
+    if (displayHour < 10) {
+        displayHour = '0' + displayHour;
+    }
+    if (minute < 10) {
+        minute = '0' + minute;
+    }
+    if (second < 10) {
+        second = '0' + second;
+    }
+    alert(`${displayHour}:${minute}:${second} ${period}`);
 }

@@ -13,6 +13,10 @@ if (isNaN(input)) {
         let tram = Math.floor(input / 100);
 
         switch (donVi) {
+            case 0:{
+                str = (chuc > 0||tram>0) ? "" : "khong";
+                break;
+            }
             case 1:
                 str = (chuc > 1) ? "mốt" : "một";
                 break;
