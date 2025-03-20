@@ -1,6 +1,6 @@
 let input = prompt("Nhập một chuỗi:");
-if (isNaN(input)) {
+if (/^[A-Za-z]+$/.test(input)) {
     alert("Chuỗi bạn nhập chỉ chứa chữ cái.");
 } else {
-    alert("Chuỗi bạn nhập KHÔNG phải chỉ chứa chữ cái.");
+    alert("Chuỗi bạn nhập không phải chỉ chứa chữ cái.");
 }
