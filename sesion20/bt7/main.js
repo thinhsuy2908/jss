@@ -1,18 +1,19 @@
-let n = 10;
-let x = 0;
-let y = 1;
-let z;
-let i = 2;
-for (; i <= n;) {
-    z = x + y;
-    x = y;
-    y = z;
-    i = i + 1;
-}
-let flag;
-if (n === 0) {
-    flag = x;
+let a = 1;
+let b = 1;
+let n = Number(prompt("Nhập số n:"));
+
+if (isNaN(n) || n <= 0) {
+    alert("Không hợp lệ, vui lòng nhập lại số nguyên dương.");
 } else {
-    flag = y;
+    document.writeln(`F(1) = 1<br>`);
+    if (n > 1) {
+        document.writeln(`F(2) = 1<br>`);
+    }
+
+    for (let i = 3; i <= n; i++) { 
+        let next = a + b;
+        a = b;
+        b = next;
+        document.writeln(`F(${i}) = ${next}<br>`);
+    }
 }
-alert(flag);

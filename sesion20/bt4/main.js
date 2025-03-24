@@ -1,15 +1,8 @@
-let input=prompt("vui long nhập chuỗi")
-let con=prompt("vui lòng nhập ký tự con")
-let flag = false;
-for (let i = 0; i < input.length; i++) {
-    if (input[i] === con) {
-        flag = true;
-        break;
-    }
-}
+let input = prompt("Vui lòng nhập chuỗi:");
+let con = prompt("Vui lòng nhập ký tự cần tìm:");
 
-if (flag) {
-    alert(`chuỗi ${input} chứa ký tự con ${con}`);
+if (input.includes(charToFind)) {
+    alert(`Chuỗi "${input}" có chứa ký tự "${con}".`);
 } else {
-    alert("không chứa ký tự cần kiếm");
+    alert(`Chuỗi "${input}" không chứa ký tự "${con}".`);
 }
