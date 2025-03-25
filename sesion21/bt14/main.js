@@ -1,5 +1,5 @@
 let input = Number(prompt("Vui lòng nhập số tiền của bạn"));
-if (isNaN(input) || input < 1000) {
+if (isNaN(input) || input % 1000===0) {
     alert("Vui lòng nhập số tiền hợp lệ (tối thiểu 1.000 VNĐ)");
 } else {
     if (input >= 500000) {
