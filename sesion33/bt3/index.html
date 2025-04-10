@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lọc danh mục</title>
+  <style>
+    select, button {
+      margin-bottom: 15px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Form lọc -->
+  <select id="categorySelect">
+    <option value="all">-- Lựa chọn danh mục --</option>
+    <option value="Đồ ăn">Đồ ăn</option>
+    <option value="Nước">Nước</option>
+    <option value="Dụng cụ">Dụng cụ</option>
+  </select>
+  <button onclick="filterItems()">Lọc</button>
+  <ul id="foodList">
+    <li>Tên đồ ăn: Rau sạch - Danh mục: Đồ ăn</li>
+    <li>Tên đồ ăn: Thịt lợn - Danh mục: Đồ ăn</li>
+    <li>Tên đồ ăn: Pepsi không calo - Danh mục: Nước</li>
+    <li>Tên đồ ăn: Cocacola - Danh mục: Nước</li>
+    <li>Tên đồ ăn: Cờ lê - Danh mục: Dụng cụ</li>
+    <li>Tên đồ ăn: Tua vít - Danh mục: Dụng cụ</li>
+  </ul>
+  <script src="./main.js"></script>
+</body>
+</html>

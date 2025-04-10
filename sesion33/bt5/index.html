@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Danh sách sản phẩm</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .card-img-top {
+      height: 150px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+<div class="container mt-4">
+  <div class="input-group mb-4">
+    <input type="text" class="form-control" placeholder="Search">
+    <button class="btn btn-success">Search</button>
+  </div>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-4">
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkNeqveGoWGR0W-V-QVNsHJ6dRJhS6k9i7lA&s" class="card-img-top" alt="Laptop Dell XPS 15">
+        <div class="card-body">
+          <h6 class="card-title">Laptop Dell XPS 15</h6>
+          <p class="card-text small">Laptop cao cấp với màn hình 15 inch, CPU Intel Core i7 và RAM 16GB.</p>
+          <p class="fw-bold">35,990,000 VND</p>
+          <a href="#" class="btn btn-primary btn-sm">Buy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGOmUcdL5dGTSzamu0FggNjDR2lR_sh4JaaA&s" class="card-img-top" alt="iPhone 15 Pro Max">
+        <div class="card-body">
+          <h6 class="card-title">iPhone 15 Pro Max</h6>
+          <p class="card-text small">Điện thoại flagship của Apple với camera 48MP và chip A17 Pro.</p>
+          <p class="fw-bold">32,990,000 VND</p>
+          <a href="#" class="btn btn-primary btn-sm">Buy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRkv2IBNipQCeZc5e4_d3_p1cbL3X712LEaPiiQNsR9bOzxEQzK34szsCp9Ey6LPdLl0X0RVZQM2OZMX8kYvIuRrvCKbqf-e9pSHYEtCewP9hHIdn1YoLlbgToh&usqp=CAc" class="card-img-top" alt="Samsung Galaxy S24 Ultra">
+        <div class="card-body">
+          <h6 class="card-title">Samsung Galaxy S24 Ultra</h6>
+          <p class="card-text small">Điện thoại Android mạnh mẽ với bút S-Pen và camera siêu zoom.</p>
+          <p class="fw-bold">28,990,000 VND</p>
+          <a href="#" class="btn btn-primary btn-sm">Buy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Tai nghe Sony WH-1000XM5">
+        <div class="card-body">
+          <h6 class="card-title">Tai nghe Sony WH-1000XM5</h6>
+          <p class="card-text small">Tai nghe chống ồn tốt nhất với thời lượng pin lên đến 30 giờ.</p>
+          <p class="fw-bold">7,990,000 VND</p>
+          <a href="#" class="btn btn-primary btn-sm">Buy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="watch.jpg" class="card-img-top" alt="Apple Watch Series 9">
+        <div class="card-body">
+          <h6 class="card-title">Apple Watch Series 9</h6>
+          <p class="card-text small">Đồng hồ thông minh cao cấp với màn hình độ sáng 2000 nit và chip S9.</p>
+          <p class="fw-bold">11,990,000 VND</p>
+          <a href="#" class="btn btn-primary btn-sm">Buy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="jbl.jpg" class="card-img-top" alt="Loa JBL Charge 5">
+        <div class="card-body">
+          <h6 class="card-title">Loa JBL Charge 5</h6>
+          <p class="card-text small">Loa Bluetooth chống nước với âm bass mạnh mẽ và pin 20 giờ.</p>
+          <p class="fw-bold">3,990,000 VND</p>
+          <a href="#" class="btn btn-primary btn-sm">Buy</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
+  <script src="main.js"></script>
+</body>
+</html>
